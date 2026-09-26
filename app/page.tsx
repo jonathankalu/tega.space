@@ -48,7 +48,7 @@ export default function Home() {
             </p>
             <div className="flex items-center pt-2">
               <p>
-                Wanna work together? reach me at <a href="mailto:tobiamenah@gmail.com" className="text-[#E5E5E5] underline">tobiamenah@gmail.com</a>
+                Wanna work together? reach me at <a href="mailto:tobiamenah@gmail.com" className="text-[#E5E5E5] underline">tobiamenah@gmail.com</a> 🌍
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function Home() {
             <span className="text-[#737373] text-sm whitespace-pre-wrap">2025 mid June  -  2025   August </span>
             <div className="flex flex-col gap-2 w-[319px]">
               <span className="text-[#E5E5E5] text-sm">Product designer at Peachit</span>
-              <p className="text-[#737373] text-sm leading-relaxed">Joined the core team to solve a problem in Ed-tech<br />that will make learning and education fun again.</p>
+              <p className="text-[#737373] text-sm leading-relaxed">Joined the core team to solve a problem in Ed-tech that will make learning and education fun again.</p>
             </div>
           </div>
         </div>
