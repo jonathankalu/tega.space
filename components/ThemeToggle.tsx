@@ -1,18 +1,29 @@
 'use client';
-import { useState } from 'react';
+
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  // Prevent hydration mismatch
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  const isDark = theme === 'dark';
 
   const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-    // Note: To fully implement next-themes, we would use useTheme() here.
+    setTheme(isDark ? 'light' : 'dark');
   };
 
   return (
     <button 
       onClick={toggleTheme}
-      className="flex items-center bg-[#171717] rounded-full border border-[#0A0A0A] shadow-inner relative transition-all duration-300 ease-in-out cursor-pointer"
+      className="flex items-center bg-accent rounded-full border border-border relative transition-all duration-300 ease-in-out cursor-pointer"
       style={{ 
         width: '56px', 
         height: '28px',
@@ -23,7 +34,7 @@ export default function ThemeToggle() {
     >
       {/* Sun Icon Area (Left) */}
       <div className="absolute left-[3px] flex items-center justify-center w-[22px] h-[22px] z-0">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#737373" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="12" cy="12" r="5"></circle>
           <line x1="12" y1="1" x2="12" y2="3"></line>
           <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -38,20 +49,20 @@ export default function ThemeToggle() {
 
       {/* Moon Icon Area (Right) */}
       <div className="absolute right-[3px] flex items-center justify-center w-[22px] h-[22px] z-0">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#737373" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
       </div>
 
       {/* Toggle Thumb */}
       <div 
-        className={`flex items-center justify-center w-[22px] h-[22px] bg-[#2A2A2A] rounded-full transition-transform duration-300 ease-in-out z-10 shadow-sm`}
-        style={{ transform: theme === 'dark' ? 'translateX(0)' : 'translateX(28px)' }}
+        className={`flex items-center justify-center w-[22px] h-[22px] rounded-full transition-transform duration-300 ease-in-out z-10 shadow-sm ${isDark ? 'bg-[#2A2A2A]' : 'bg-white border border-gray-200'}`}
+        style={{ transform: isDark ? 'translateX(0)' : 'translateX(28px)' }}
       >
-        {theme === 'dark' ? (
+        {isDark ? (
           <img src="/assets/sun.svg" alt="Sun" style={{ width: '12px', height: '12px' }} />
         ) : (
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#E5E5E5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#171717" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         )}

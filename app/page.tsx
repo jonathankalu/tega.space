@@ -3,19 +3,20 @@ import { Nav } from '@/components/Nav';
 import { SocialLinks } from '@/components/SocialIcons';
 import { CaseStudyLink } from '@/components/CaseStudyLink';
 import ThemeToggle from '@/components/ThemeToggle';
+import { VerificationBadge } from '@/components/VerificationBadge';
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center bg-[#0A0A0A] font-sans min-h-screen text-[#D4D4D4]">
+    <div className="flex flex-col flex-1 items-center font-sans min-h-screen text-foreground">
       <main className="flex flex-1 w-full max-w-2xl flex-col items-center py-9 px-8 gap-16">
         
         {/* Nav & Header */}
         <div className="flex flex-col items-center gap-[46px] w-full">
-          <Nav theme="light" activePage="home" />
+          <Nav activePage="home" />
 
           {/* Time & Availability */}
           <div className="flex items-center gap-2.5 w-full">
-            <span className="text-[#525252] text-sm">9:00 PM UTC+1</span>
+            <span className="text-muted text-sm">9:00 PM UTC+1</span>
           </div>
 
           <div className="flex flex-col gap-6 w-full">
@@ -24,31 +25,31 @@ export default function Home() {
                 <Image src="/assets/avatar.png" alt="Tegha" width={48} height={48} className="rounded-lg object-cover" />
                 <div className="flex flex-col">
                   <div className="flex items-center gap-1">
-                    <span className="text-[#E5E5E5] text-base">Amenah Oluwatobi Tegha</span>
-                    <img src="/assets/vr-badge-dark.svg" alt="Verified Badge" style={{ width: '12.8px', height: '12.8px' }} />
+                    <span className="text-primary text-base">Amenah Oluwatobi Tegha</span>
+                    <VerificationBadge />
                   </div>
-                  <span className="text-[#737373] text-sm">Product Designer/Researcher</span>
+                  <span className="text-muted text-sm">Product Designer/Researcher</span>
                 </div>
               </div>
               <ThemeToggle />
             </div>
-            <p className="text-[#737373] text-sm">Currently making cool things</p>
+            <p className="text-muted text-sm">Currently making cool things</p>
           </div>
         </div>
 
         {/* About */}
         <div className="flex flex-col gap-7 w-full">
-          <h2 className="text-[#737373] text-sm font-medium">About</h2>
-          <div className="flex flex-col gap-7 text-[#737373] text-sm leading-relaxed">
+          <h2 className="text-muted text-sm font-medium">About</h2>
+          <div className="flex flex-col gap-7 text-muted text-sm leading-relaxed">
             <p>
-              Yo, my name is Amenah Oluwatobi Tegha (call me Tegha though) i'm a 19 year old <span className="text-[#E5E5E5]">Product Designer</span> with over a year of experience, currently leveling up to become an engineer.
+              Yo, my name is Amenah Oluwatobi Tegha (call me Tegha though) i'm a 19 year old <span className="text-primary">Product Designer</span> with over a year of experience, currently leveling up to become an engineer.
             </p>
             <p>
-              I design, not just screens but products for companies, startups and clients that solve real world problems and actually convert, whether its Web3, AI or Fintech . Right now, i'm working on <span className="text-[#E5E5E5]">Boba AI </span>and other<span className="text-[#E5E5E5]"> projects. </span>
+              I design, not just screens but products for companies, startups and clients that solve real world problems and actually convert, whether its Web3, AI or Fintech . Right now, i'm working on <span className="text-primary">Boba AI </span>and other<span className="text-primary"> projects. </span>
             </p>
             <div className="flex items-center pt-2">
               <p>
-                Wanna work together? reach me at <a href="mailto:tobiamenah@gmail.com" className="text-[#E5E5E5] underline">tobiamenah@gmail.com</a> 🌍
+                Wanna work together? reach me at <a href="mailto:tobiamenah@gmail.com" className="text-primary underline">tobiamenah@gmail.com</a> 🌍
               </p>
             </div>
           </div>
@@ -57,39 +58,39 @@ export default function Home() {
         {/* Experience */}
         <div className="flex flex-col gap-[28px] w-full">
           <div className="flex flex-col gap-6">
-            <h2 className="text-[#737373] text-sm">Experience</h2>
-            <p className="text-[#737373] text-sm">Overview of where I've worked</p>
+            <h2 className="text-muted text-sm">Experience</h2>
+            <p className="text-muted text-sm">Overview of where I've worked</p>
           </div>
           
           <div className="flex justify-between items-start w-full">
-            <span className="text-[#737373] text-sm">2026 July - Now</span>
+            <span className="text-muted text-sm">2026 July - Now</span>
             <div className="flex flex-col gap-2 w-[319px]">
-              <span className="text-[#E5E5E5] text-sm">Product/UI designer at <span className="underline">Chrine.site</span></span>
-              <p className="text-[#737373] text-sm leading-relaxed">Redesigning landing pages and websites for architectural firms and studios for better visual hierarchy and overall visual design.</p>
+              <span className="text-primary text-sm">Product/UI designer at <span className="underline">Chrine.site</span></span>
+              <p className="text-muted text-sm leading-relaxed">Redesigning landing pages and websites for architectural firms and studios for better visual hierarchy and overall visual design.</p>
             </div>
           </div>
 
           <div className="flex justify-between items-start w-full">
-            <span className="text-[#737373] text-sm">2025 September - 2025 December</span>
+            <span className="text-muted text-sm">2025 September - 2025 December</span>
             <div className="flex flex-col gap-2 w-[319px]">
-              <span className="text-[#E5E5E5] text-sm">UI Designer at Dexcraft(now <span className="underline">Jetherverse</span>)</span>
-              <p className="text-[#737373] text-sm leading-relaxed">Contributed to early stages of the studio development, with selected screens designed, before transitioning off due to school commitment.</p>
+              <span className="text-primary text-sm">UI Designer at Dexcraft(now <span className="underline">Jetherverse</span>)</span>
+              <p className="text-muted text-sm leading-relaxed">Contributed to early stages of the studio development, with selected screens designed, before transitioning off due to school commitment.</p>
             </div>
           </div>
 
           <div className="flex justify-between items-start w-full">
-            <span className="text-[#737373] text-sm">2025 August - 2025 September</span>
+            <span className="text-muted text-sm">2025 August - 2025 September</span>
             <div className="flex flex-col gap-2 w-[319px]">
-              <span className="text-[#E5E5E5] text-sm">Product designer at Bitech team</span>
-              <p className="text-[#737373] text-sm leading-relaxed">Collaborated with the team on creating a solution for online business management. i worked on the main overview dashboard and customer management section</p>
+              <span className="text-primary text-sm">Product designer at Bitech team</span>
+              <p className="text-muted text-sm leading-relaxed">Collaborated with the team on creating a solution for online business management. i worked on the main overview dashboard and customer management section</p>
             </div>
           </div>
 
           <div className="flex justify-between items-start w-full">
-            <span className="text-[#737373] text-sm whitespace-pre-wrap">2025 mid June  -  2025   August </span>
+            <span className="text-muted text-sm whitespace-pre-wrap">2025 mid June  -  2025   August </span>
             <div className="flex flex-col gap-2 w-[319px]">
-              <span className="text-[#E5E5E5] text-sm">Product designer at Peachit</span>
-              <p className="text-[#737373] text-sm leading-relaxed">Joined the core team to solve a problem in Ed-tech that will make learning and education fun again.</p>
+              <span className="text-primary text-sm">Product designer at Peachit</span>
+              <p className="text-muted text-sm leading-relaxed">Joined the core team to solve a problem in Ed-tech that will make learning and education fun again.</p>
             </div>
           </div>
         </div>
@@ -97,8 +98,8 @@ export default function Home() {
         {/* Projects */}
         <div className="flex flex-col gap-7 w-full">
           <div className="flex gap-5 items-center">
-            <span className="text-[#E5E5E5] text-sm cursor-pointer">Projects</span>
-            <span className="text-[#737373] text-sm cursor-pointer hover:text-[#E5E5E5] transition-colors">Explorations</span>
+            <span className="text-primary text-sm cursor-pointer">Projects</span>
+            <span className="text-muted text-sm cursor-pointer hover:text-primary transition-colors">Explorations</span>
           </div>
 
           <div className="flex flex-col gap-4 w-full">
@@ -106,7 +107,7 @@ export default function Home() {
               <div className="relative w-full h-[319px]">
                 <Image src="/assets/project-1.png" alt="Boba AI" fill className="object-cover" />
               </div>
-              <div className="flex justify-between items-center py-4 text-[#D4D4D4] text-sm bg-transparent group-hover:text-white transition-colors">
+              <div className="flex justify-between items-center py-4 text-foreground text-sm bg-transparent group-hover:text-white transition-colors">
                 <span className="whitespace-pre-wrap">Boba AI  -  Fully Automated workflow</span>
                 <CaseStudyLink href="#" />
               </div>
@@ -116,7 +117,7 @@ export default function Home() {
               <div className="relative w-full h-[319px]">
                 <Image src="/assets/project-2.png" alt="Metis" fill className="object-cover" />
               </div>
-              <div className="flex justify-between items-center py-4 text-[#D4D4D4] text-sm bg-transparent group-hover:text-white transition-colors">
+              <div className="flex justify-between items-center py-4 text-foreground text-sm bg-transparent group-hover:text-white transition-colors">
                 <span className="whitespace-pre-wrap">Metis  -  Stock App</span>
                 <CaseStudyLink href="#" />
               </div>
@@ -126,7 +127,7 @@ export default function Home() {
               <div className="relative w-full h-[319px]">
                 <Image src="/assets/project-3.png" alt="Lux" fill className="object-cover" />
               </div>
-              <div className="flex justify-between items-center py-4 text-[#D4D4D4] text-sm bg-transparent group-hover:text-white transition-colors">
+              <div className="flex justify-between items-center py-4 text-foreground text-sm bg-transparent group-hover:text-white transition-colors">
                 <span>Lux - studio. GenAI</span>
                 <CaseStudyLink href="#" />
               </div>
@@ -136,8 +137,8 @@ export default function Home() {
 
         {/* Tech Stack */}
         <div className="flex flex-col gap-7 w-full">
-          <span className="text-[#737373] text-sm">Tech Stack</span>
-          <div className="flex flex-wrap justify-between gap-4 w-full text-[#737373]">
+          <span className="text-muted text-sm">Tech Stack</span>
+          <div className="flex flex-wrap justify-between gap-4 w-full text-muted">
             <div className="flex items-center gap-1"><Image src="/assets/tech-figma.svg" alt="Figma" width={24} height={24} /> <span className="text-sm">Figma</span></div>
             <div className="flex items-center gap-1"><Image src="/assets/tech-claude.svg" alt="Claude" width={24} height={24} /> <span className="text-sm">Claude</span></div>
             <div className="flex items-center gap-1"><Image src="/assets/tech-html.svg" alt="Html" width={24} height={24} /> <span className="text-sm">Html</span></div>
@@ -150,20 +151,20 @@ export default function Home() {
 
         {/* Personal Stuff */}
         <div className="flex flex-col gap-4 w-full">
-          <span className="text-[#737373] text-sm">Personal stuff ;)</span>
+          <span className="text-muted text-sm">Personal stuff ;)</span>
           
           <div className="flex flex-col gap-5 w-full">
-            <span className="text-[#737373] text-sm">Music i listen to for work</span>
+            <span className="text-muted text-sm">Music i listen to for work</span>
             
-            <div className="flex justify-between items-center p-2 rounded-lg bg-[#171717] w-full">
-              <div className="flex items-center gap-1 p-2.5 rounded-lg bg-[#262626]">
+            <div className="flex justify-between items-center p-2 rounded-lg bg-accent w-full">
+              <div className="flex items-center gap-1 p-2.5 rounded-lg bg-accent border border-border">
                 <Image src="/assets/lofi-icon.png" alt="Lofi" width={40} height={40} className="rounded" />
                 <div className="flex flex-col gap-1 ml-2">
-                  <span className="text-[#F5F5F5] text-sm">Beats to relax/study to</span>
-                  <span className="text-[#737373] text-sm">Lofi girl</span>
+                  <span className="text-primary text-sm">Beats to relax/study to</span>
+                  <span className="text-muted text-sm">Lofi girl</span>
                 </div>
               </div>
-              <a href="#" className="flex items-center gap-1 text-[#737373] text-sm hover:text-[#F5F5F5] transition-colors pr-2">
+              <a href="#" className="flex items-center gap-1 text-muted text-sm hover:text-primary transition-colors pr-2">
                 Listen on spotify
                 <Image src="/assets/spotify.svg" alt="Spotify" width={15} height={15} />
               </a>
@@ -171,7 +172,7 @@ export default function Home() {
 
             <div className="w-full relative h-[362px] mt-4">
               <div className="flex items-center gap-1 absolute top-1 left-1.5 z-10">
-                 <span className="text-[#737373] text-sm">Fav car brand</span>
+                 <span className="text-muted text-sm">Fav car brand</span>
               </div>
               {/* Fake Masonry / absolute positioning for collage */}
               <img src="/assets/collage-1-59384e.png" alt="Collage" style={{ position: 'absolute', left: '0px', top: '38px', width: '87px', height: '105px', objectFit: 'cover' }} />
@@ -187,7 +188,7 @@ export default function Home() {
 
             <div className="flex flex-col gap-5 py-1">
               <div className="flex items-center gap-1">
-                <span className="text-[#737373] text-sm">Pics</span>
+                <span className="text-muted text-sm">Pics</span>
               </div>
               <div className="flex gap-1 overflow-x-auto w-full scrollbar-hide">
                 <Image src="/assets/pic-1.png" alt="Pic" width={132} height={190} className="object-cover flex-shrink-0 rounded-sm" />
@@ -202,10 +203,10 @@ export default function Home() {
         {/* Footer */}
         <div className="flex flex-col gap-7 w-full pt-16 pb-8">
           <div className="flex justify-between w-full">
-            <span className="text-[#737373] text-sm">Wanna connect?</span>
+            <span className="text-muted text-sm">Wanna connect?</span>
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 bg-[#00D492] rounded-full"></div>
-              <span className="text-[#737373] text-sm">Available</span>
+              <span className="text-muted text-sm">Available</span>
             </div>
           </div>
 
@@ -218,9 +219,9 @@ export default function Home() {
           <div className="flex justify-between items-center w-full">
             <div className="flex items-center gap-1">
               <span className="text-xs">&copy;</span>
-              <span className="text-[#737373] text-sm">2026 Amenah Tegha</span>
+              <span className="text-muted text-sm">2026 Amenah Tegha</span>
             </div>
-            <span className="text-[#737373] text-sm">Goodbyeeee :)</span>
+            <span className="text-muted text-sm">Goodbyeeee :)</span>
           </div>
         </div>
 

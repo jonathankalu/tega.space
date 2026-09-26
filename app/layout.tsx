@@ -23,13 +23,20 @@ export const metadata: Metadata = {
   description: "Product Designer and Researcher",
 };
 
+import { Providers } from './providers';
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${swanky.variable} h-full antialiased bg-[#0A0A0A]`}
+      className={`${geistSans.variable} ${geistMono.variable} ${swanky.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-[#0A0A0A] text-[#D4D4D4]">{children}</body>
+      <body className="min-h-full flex flex-col bg-background text-foreground transition-colors duration-300">
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
   );
 }

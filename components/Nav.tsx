@@ -8,15 +8,10 @@ interface NavProps {
   activePage?: Page;
 }
 
-export function Nav({ theme = 'light', activePage = 'home' }: NavProps) {
-  const isDark = theme === 'dark';
-  
-  // theme="light" means the Nav pill itself is light colored (for dark backgrounds)
-  // theme="dark" means the Nav pill itself is dark colored (for light backgrounds)
-  
-  const bgClass = isDark ? 'bg-[#171717] text-[#D4D4D4]' : 'bg-[#F5F5F5] text-[#262626]';
-  const textMutedClass = isDark ? 'text-[#A1A1A1]' : 'text-[#737373]';
-  const shadowClass = isDark ? 'shadow-[0_11px_9.7px_rgba(141,141,141,0.25)]' : '';
+export function Nav({ activePage = 'home' }: NavProps) {
+  const bgClass = 'bg-nav-bg text-nav-text';
+  const textMutedClass = 'text-muted';
+  const shadowClass = 'shadow-[0_11px_9.7px_rgba(141,141,141,0.25)] dark:shadow-[0_4px_14px_rgba(0,0,0,0.5)]';
 
   const pages = [
     { id: 'about', label: 'About', icon: '/assets/nav-icon-0.svg' },
