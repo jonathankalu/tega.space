@@ -105,7 +105,10 @@ export default function Home() {
         {/* Projects */}
         <div className="flex flex-col gap-7 w-full">
           <div className="flex gap-5 items-center">
-            <span className="text-primary text-sm cursor-pointer">Projects</span>
+            <div className="flex items-center gap-1.5 cursor-pointer">
+              <div className="w-1.5 h-1.5 min-w-[6px] min-h-[6px] flex-shrink-0 bg-primary rounded-full"></div>
+              <span className="text-primary text-sm">Projects</span>
+            </div>
             <span className="text-muted text-sm cursor-pointer hover:text-primary transition-colors">Explorations</span>
           </div>
 
@@ -114,7 +117,7 @@ export default function Home() {
               <div className="relative w-full h-[319px]">
                 <Image src="/assets/project-1.png" alt="Boba AI" fill className="object-cover" />
               </div>
-              <div className="flex justify-between items-center py-4 text-foreground text-sm bg-transparent group-hover:text-white transition-colors">
+              <div className="flex justify-between items-center py-4 text-muted text-sm bg-transparent group-hover:text-primary transition-colors">
                 <span className="whitespace-pre-wrap">Boba AI  -  Fully Automated workflow</span>
                 <CaseStudyLink href="#" />
               </div>
@@ -124,7 +127,7 @@ export default function Home() {
               <div className="relative w-full h-[319px]">
                 <Image src="/assets/project-2.png" alt="Metis" fill className="object-cover" />
               </div>
-              <div className="flex justify-between items-center py-4 text-foreground text-sm bg-transparent group-hover:text-white transition-colors">
+              <div className="flex justify-between items-center py-4 text-muted text-sm bg-transparent group-hover:text-primary transition-colors">
                 <span className="whitespace-pre-wrap">Metis  -  Stock App</span>
                 <CaseStudyLink href="#" />
               </div>
@@ -134,7 +137,7 @@ export default function Home() {
               <div className="relative w-full h-[319px]">
                 <Image src="/assets/project-3.png" alt="Lux" fill className="object-cover" />
               </div>
-              <div className="flex justify-between items-center py-4 text-foreground text-sm bg-transparent group-hover:text-white transition-colors">
+              <div className="flex justify-between items-center py-4 text-muted text-sm bg-transparent group-hover:text-primary transition-colors">
                 <span>Lux - studio. GenAI</span>
                 <CaseStudyLink href="#" />
               </div>
@@ -212,7 +215,7 @@ export default function Home() {
           <div className="flex justify-between w-full">
             <span className="text-muted text-sm">Wanna connect?</span>
             <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 bg-[#00D492] rounded-full"></div>
+              <div className="w-1.5 h-1.5 min-w-[6px] min-h-[6px] flex-shrink-0 bg-[#00D492] rounded-full"></div>
               <span className="text-muted text-sm">Available</span>
             </div>
           </div>
