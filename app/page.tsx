@@ -46,8 +46,8 @@ export default function Home() {
                 Product Designer
                 <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10 w-max px-2.5 py-1.5 flex items-center gap-1.5 text-xs text-background bg-foreground rounded-md shadow-lg after:content-[''] after:absolute after:top-full after:left-1/2 after:-ml-1 after:border-4 after:border-transparent after:border-t-foreground">
                   Certified by NIIT
-                  <img src="/assets/vr-badge-dark.svg" alt="Verified Badge" className="w-[12.8px] h-[12.8px] dark:hidden" />
-                  <img src="/assets/vr-badge-light.svg" alt="Verified Badge" className="w-[12.8px] h-[12.8px] hidden dark:block" />
+                  <img src="/assets/vr-badge-light.svg" alt="Verified Badge" className="w-[12.8px] h-[12.8px] dark:hidden" />
+                  <img src="/assets/vr-badge-dark.svg" alt="Verified Badge" className="w-[12.8px] h-[12.8px] hidden dark:block" />
                 </span>
               </span> with over a year of experience, currently leveling up to become an engineer.
             </p>
