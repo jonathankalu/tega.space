@@ -8,7 +8,7 @@ import { VerificationBadge } from '@/components/VerificationBadge';
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center font-sans min-h-screen text-foreground">
-      <main className="flex flex-1 w-full max-w-2xl flex-col items-center py-9 px-4 md:px-8 gap-16 overflow-x-hidden">
+      <main className="flex flex-1 w-full max-w-2xl flex-col items-center pt-9 pb-0 px-4 md:px-8 gap-16 overflow-x-hidden">
         
         {/* Nav & Header */}
         <div className="flex flex-col items-center gap-[46px] w-full">
@@ -148,14 +148,14 @@ export default function Home() {
         {/* Tech Stack */}
         <div className="flex flex-col gap-7 w-full">
           <span className="text-muted text-sm">Tech Stack</span>
-          <div className="flex flex-wrap justify-between gap-4 w-full text-muted">
-            <div className="flex items-center gap-1"><Image src="/assets/tech-figma.svg" alt="Figma" width={24} height={24} /> <span className="text-sm">Figma</span></div>
-            <div className="flex items-center gap-1"><Image src="/assets/tech-claude.svg" alt="Claude" width={24} height={24} /> <span className="text-sm">Claude</span></div>
-            <div className="flex items-center gap-1"><Image src="/assets/tech-html.svg" alt="Html" width={24} height={24} /> <span className="text-sm">Html</span></div>
-            <div className="flex items-center gap-1"><Image src="/assets/tech-css.svg" alt="Css" width={24} height={24} /> <span className="text-sm">Css</span></div>
-            <div className="flex items-center gap-1"><Image src="/assets/tech-vscode.svg" alt="Vs code" width={24} height={24} /> <span className="text-sm">Vs code</span></div>
-            <div className="flex items-center gap-1"><Image src="/assets/tech-slack.svg" alt="Slack" width={24} height={24} /> <span className="text-sm">Slack</span></div>
-            <div className="flex items-center gap-1"><Image src="/assets/tech-github.svg" alt="Github" width={24} height={24} /> <span className="text-sm">Github</span></div>
+          <div className="flex flex-nowrap overflow-x-auto scrollbar-hide gap-4 w-full text-muted pb-2">
+            <div className="flex items-center gap-1 flex-shrink-0"><Image src="/assets/tech-figma.svg" alt="Figma" width={24} height={24} /> <span className="text-sm">Figma</span></div>
+            <div className="flex items-center gap-1 flex-shrink-0"><Image src="/assets/tech-claude.svg" alt="Claude" width={24} height={24} /> <span className="text-sm">Claude</span></div>
+            <div className="flex items-center gap-1 flex-shrink-0"><Image src="/assets/tech-html.svg" alt="Html" width={24} height={24} /> <span className="text-sm">Html</span></div>
+            <div className="flex items-center gap-1 flex-shrink-0"><Image src="/assets/tech-css.svg" alt="Css" width={24} height={24} /> <span className="text-sm">Css</span></div>
+            <div className="flex items-center gap-1 flex-shrink-0"><Image src="/assets/tech-vscode.svg" alt="Vs code" width={24} height={24} /> <span className="text-sm">Vs code</span></div>
+            <div className="flex items-center gap-1 flex-shrink-0"><Image src="/assets/tech-slack.svg" alt="Slack" width={24} height={24} /> <span className="text-sm">Slack</span></div>
+            <div className="flex items-center gap-1 flex-shrink-0"><Image src="/assets/tech-github.svg" alt="Github" width={24} height={24} /> <span className="text-sm">Github</span></div>
           </div>
         </div>
 
@@ -174,7 +174,7 @@ export default function Home() {
                   <span className="text-[#737373] text-sm">Lofi girl</span>
                 </div>
               </div>
-              <a href="#" className="flex items-center gap-1.5 text-[#737373] text-sm hover:text-[#E5E5E5] transition-colors px-1 pb-0.5">
+              <a href="#" className="flex items-center gap-1.5 text-[#737373] text-sm hover:text-[#E5E5E5] transition-colors px-1 pb-0.5 flex-shrink-0">
                 Listen on spotify
                 <Image src="/assets/spotify.svg" alt="Spotify" width={14} height={14} />
               </a>
@@ -238,7 +238,7 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <div className="flex flex-col gap-7 w-full pt-16 pb-8">
+        <div className="flex flex-col gap-7 w-full pt-16 pb-0">
           <div className="flex justify-between w-full">
             <span className="text-muted text-sm">Wanna connect?</span>
             <div className="flex items-center gap-2">
@@ -249,11 +249,11 @@ export default function Home() {
 
           <SocialLinks />
           
-          <div className="w-full flex justify-center py-8">
+          <div className="w-full flex justify-center pt-8">
             <Image src="/assets/footer-curve.svg" alt="Curve" width={77} height={124} />
           </div>
 
-          <div className="flex justify-between items-center w-full">
+          <div className="hidden md:flex justify-between items-center w-full mt-4">
             <div className="flex items-center gap-1">
               <span className="text-xs">&copy;</span>
               <span className="text-muted text-sm">2026 Amenah Tegha</span>
