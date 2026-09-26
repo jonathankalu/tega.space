@@ -166,23 +166,25 @@ export default function Home() {
           <div className="flex flex-col gap-5 w-full">
             <span className="text-muted text-sm">Music i listen to for work</span>
             
-            <div className="flex justify-between items-center p-2 rounded-lg bg-accent w-full">
-              <div className="flex items-center gap-1 p-2.5 rounded-lg bg-accent border border-border">
-                <Image src="/assets/lofi-icon.png" alt="Lofi" width={40} height={40} className="rounded" />
-                <div className="flex flex-col gap-1 ml-2">
-                  <span className="text-primary text-sm">Beats to relax/study to</span>
-                  <span className="text-muted text-sm">Lofi girl</span>
+            <div className="flex flex-col gap-[10px] p-2 rounded-lg bg-[#171717] w-full">
+              <div className="flex items-center gap-3 p-2 rounded-md bg-[#262626]">
+                <Image src="/assets/lofi-icon.png" alt="Lofi" width={40} height={40} className="rounded-sm object-cover" />
+                <div className="flex flex-col">
+                  <span className="text-[#E5E5E5] text-sm font-medium">Beats to relax/study to</span>
+                  <span className="text-[#737373] text-sm">Lofi girl</span>
                 </div>
               </div>
-              <a href="#" className="flex items-center gap-1 text-muted text-sm hover:text-primary transition-colors pr-2">
+              <a href="#" className="flex items-center gap-1.5 text-[#737373] text-sm hover:text-[#E5E5E5] transition-colors px-1 pb-0.5">
                 Listen on spotify
-                <Image src="/assets/spotify.svg" alt="Spotify" width={15} height={15} />
+                <Image src="/assets/spotify.svg" alt="Spotify" width={14} height={14} />
               </a>
             </div>
 
             <div className="w-full relative h-[362px] mt-4">
               <div className="flex items-center gap-1 absolute top-1 left-1.5 z-10">
                  <span className="text-muted text-sm">Fav car brand</span>
+                 <Image src="/assets/horse.svg" alt="Horse" width={15} height={15} />
+                 <Image src="/assets/energy.svg" alt="Energy" width={15} height={15} />
               </div>
               {/* Fake Masonry / absolute positioning for collage */}
               <img src="/assets/collage-1-59384e.png" alt="Collage" style={{ position: 'absolute', left: '0px', top: '38px', width: '87px', height: '105px', objectFit: 'cover' }} />
@@ -199,6 +201,7 @@ export default function Home() {
             <div className="flex flex-col gap-5 py-1">
               <div className="flex items-center gap-1">
                 <span className="text-muted text-sm">Pics</span>
+                <Image src="/assets/camera.svg" alt="Camera" width={15} height={15} />
               </div>
               <div className="flex gap-1 overflow-x-auto w-full scrollbar-hide">
                 <Image src="/assets/pic-1.png" alt="Pic" width={132} height={190} className="object-cover flex-shrink-0 rounded-sm" />
