@@ -24,6 +24,7 @@ export default function Home() {
                 <div className="flex flex-col">
                   <div className="flex items-center gap-1">
                     <span className="text-[#E5E5E5] text-base">Amenah Oluwatobi Tegha</span>
+                    <img src="/assets/vr-badge-dark.svg" alt="Verified Badge" style={{ width: '12.8px', height: '12.8px' }} />
                   </div>
                   <span className="text-[#737373] text-sm">Product Designer/Researcher</span>
                 </div>
@@ -58,41 +59,41 @@ export default function Home() {
         </div>
 
         {/* Experience */}
-        <div className="flex flex-col gap-7 w-full">
+        <div className="flex flex-col gap-[28px] w-full">
           <div className="flex flex-col gap-6">
             <h2 className="text-[#737373] text-sm">Experience</h2>
             <p className="text-[#737373] text-sm">Overview of where I've worked</p>
           </div>
           
-          <div className="flex justify-between w-full">
-            <span className="text-[#737373] text-sm w-1/3">2026 July - Now</span>
-            <div className="flex flex-col gap-2 w-2/3">
+          <div className="flex justify-between items-start w-full">
+            <span className="text-[#737373] text-sm">2026 July - Now</span>
+            <div className="flex flex-col gap-2 w-[319px]">
               <span className="text-[#E5E5E5] text-sm">Product/UI designer at <span className="underline">Chrine.site</span></span>
-              <p className="text-[#737373] text-sm">Redesigning landing pages and websites for architectural firms and studios for better visual hierarchy and overall visual design.</p>
+              <p className="text-[#737373] text-sm leading-relaxed">Redesigning landing pages and websites for architectural firms and studios for better visual hierarchy and overall visual design.</p>
             </div>
           </div>
 
-          <div className="flex justify-between w-full">
-            <span className="text-[#737373] text-sm w-1/3">2025 September - 2025 December</span>
-            <div className="flex flex-col gap-2 w-2/3">
+          <div className="flex justify-between items-start w-full">
+            <span className="text-[#737373] text-sm">2025 September - 2025 December</span>
+            <div className="flex flex-col gap-2 w-[319px]">
               <span className="text-[#E5E5E5] text-sm">UI Designer at Dexcraft(now <span className="underline">Jetherverse</span>)</span>
-              <p className="text-[#737373] text-sm">Contributed to early stages of the studio development, with selected screens designed, before transitioning off due to school commitment.</p>
+              <p className="text-[#737373] text-sm leading-relaxed">Contributed to early stages of the studio development, with selected screens designed, before transitioning off due to school commitment.</p>
             </div>
           </div>
 
-          <div className="flex justify-between w-full">
-            <span className="text-[#737373] text-sm w-1/3">2025 August - 2025 September</span>
-            <div className="flex flex-col gap-2 w-2/3">
+          <div className="flex justify-between items-start w-full">
+            <span className="text-[#737373] text-sm">2025 August - 2025 September</span>
+            <div className="flex flex-col gap-2 w-[319px]">
               <span className="text-[#E5E5E5] text-sm">Product designer at Bitech team</span>
-              <p className="text-[#737373] text-sm">Collaborated with the team on creating a solution for online business management. i worked on the main overview dashboard and customer management section</p>
+              <p className="text-[#737373] text-sm leading-relaxed">Collaborated with the team on creating a solution for online business management. i worked on the main overview dashboard and customer management section</p>
             </div>
           </div>
 
-          <div className="flex justify-between w-full">
-            <span className="text-[#737373] text-sm w-1/3">2025 mid June - 2025 August</span>
-            <div className="flex flex-col gap-2 w-2/3">
+          <div className="flex justify-between items-start w-full">
+            <span className="text-[#737373] text-sm whitespace-pre-wrap">2025 mid June  -  2025   August </span>
+            <div className="flex flex-col gap-2 w-[319px]">
               <span className="text-[#E5E5E5] text-sm">Product designer at Peachit</span>
-              <p className="text-[#737373] text-sm">Joined the core team to solve a problem in Ed-tech that will make learning and education fun again.</p>
+              <p className="text-[#737373] text-sm leading-relaxed">Joined the core team to solve a problem in Ed-tech<br />that will make learning and education fun again.</p>
             </div>
           </div>
         </div>
@@ -177,13 +178,13 @@ export default function Home() {
                  <span className="text-[#737373] text-sm">Fav car brand</span>
               </div>
               {/* Fake Masonry / absolute positioning for collage */}
-              <Image src="/assets/collage-1-59384e.png" alt="Collage" width={87} height={105} className="absolute left-0 top-[38px] object-cover" />
-              <Image src="/assets/collage-6-59384e.png" alt="Collage" width={87} height={105} className="absolute left-[38px] top-[181px] object-cover" />
-              <Image src="/assets/collage-2-59384e.png" alt="Collage" width={87} height={105} className="absolute left-[142px] top-[70px] object-cover" />
-              <Image src="/assets/collage-7.png" alt="Collage" width={139} height={93} className="absolute left-[229px] top-[221px] object-cover" />
-              <Image src="/assets/collage-3-59384e.png" alt="Collage" width={87} height={105} className="absolute left-[267px] top-[41px] object-cover" />
-              <Image src="/assets/collage-4-59384e.png" alt="Collage" width={87} height={105} className="absolute left-[406px] top-[70px] object-cover" />
-              <Image src="/assets/collage-5-59384e.png" alt="Collage" width={87} height={105} className="absolute left-[455px] top-[221px] object-cover" />
+              <img src="/assets/collage-1-59384e.png" alt="Collage" style={{ position: 'absolute', left: '0px', top: '38px', width: '87px', height: '105px', objectFit: 'cover' }} />
+              <img src="/assets/collage-6-59384e.png" alt="Collage" style={{ position: 'absolute', left: '38px', top: '181px', width: '87px', height: '105px', objectFit: 'cover' }} />
+              <img src="/assets/collage-2-59384e.png" alt="Collage" style={{ position: 'absolute', left: '142px', top: '70px', width: '87px', height: '105px', objectFit: 'cover' }} />
+              <img src="/assets/collage-7.png" alt="Collage" style={{ position: 'absolute', left: '229px', top: '221px', width: '139px', height: '93px', objectFit: 'cover' }} />
+              <img src="/assets/collage-3-59384e.png" alt="Collage" style={{ position: 'absolute', left: '267px', top: '41px', width: '87px', height: '105px', objectFit: 'cover' }} />
+              <img src="/assets/collage-4-59384e.png" alt="Collage" style={{ position: 'absolute', left: '406px', top: '70px', width: '87px', height: '105px', objectFit: 'cover' }} />
+              <img src="/assets/collage-5-59384e.png" alt="Collage" style={{ position: 'absolute', left: '455px', top: '221px', width: '87px', height: '105px', objectFit: 'cover' }} />
               
               <span className="absolute left-[25px] top-[306px] text-transparent bg-clip-text bg-gradient-to-b from-[#E9BE69] via-[#CD2F2B] to-[#D0AC64] text-4xl" style={{ fontFamily: 'var(--font-swanky), cursive' }}>Porsche</span>
             </div>
