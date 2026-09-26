@@ -42,7 +42,14 @@ export default function Home() {
           <h2 className="text-muted text-sm font-medium">About</h2>
           <div className="flex flex-col gap-7 text-muted text-sm leading-relaxed">
             <p>
-              Yo, my name is Amenah Oluwatobi Tegha (call me Tegha though) i'm a 19 year old <span className="text-primary">Product Designer</span> with over a year of experience, currently leveling up to become an engineer.
+              Yo, my name is Amenah Oluwatobi Tegha (call me Tegha though) i'm a 19 year old <span className="group relative cursor-default text-primary underline decoration-muted/50 underline-offset-2">
+                Product Designer
+                <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10 w-max px-2.5 py-1.5 flex items-center gap-1.5 text-xs text-background bg-foreground rounded-md shadow-lg after:content-[''] after:absolute after:top-full after:left-1/2 after:-ml-1 after:border-4 after:border-transparent after:border-t-foreground">
+                  Certified by NIIT
+                  <img src="/assets/vr-badge-dark.svg" alt="Verified Badge" className="w-[12.8px] h-[12.8px] dark:hidden" />
+                  <img src="/assets/vr-badge-light.svg" alt="Verified Badge" className="w-[12.8px] h-[12.8px] hidden dark:block" />
+                </span>
+              </span> with over a year of experience, currently leveling up to become an engineer.
             </p>
             <p>
               I design, not just screens but products for companies, startups and clients that solve real world problems and actually convert, whether its Web3, AI or Fintech . Right now, i'm working on <span className="text-primary">Boba AI </span>and other<span className="text-primary"> projects. </span>
