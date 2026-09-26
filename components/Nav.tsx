@@ -23,7 +23,7 @@ export function Nav({ activePage = 'home' }: NavProps) {
   const activePageData = pages.find(p => p.id === activePage);
 
   return (
-    <nav className={`flex items-center px-5 py-4 rounded-[28px] w-max transition-all duration-300 ${bgClass} ${shadowClass}`}>
+    <nav className={`flex items-center px-4 md:px-5 py-3 md:py-4 rounded-[28px] w-max max-w-full overflow-x-auto scrollbar-hide transition-all duration-300 ${bgClass} ${shadowClass}`}>
       <Link href="/" className={`flex items-center gap-2 ${activePage === 'home' ? 'mr-8' : 'mr-4'}`}>
         <Image 
           src="/assets/avatar.png" 
@@ -38,15 +38,15 @@ export function Nav({ activePage = 'home' }: NavProps) {
       </Link>
 
       {activePage === 'home' ? (
-        <div className="flex items-center gap-[25px]">
+        <div className="flex items-center gap-4 md:gap-[25px]">
           {pages.map((page) => (
-            <Link 
+            <a 
               key={page.id} 
-              href={`/${page.id}`}
+              href={`#${page.id}`}
               className={`text-sm capitalize transition-colors hover:text-current ${textMutedClass}`}
             >
               {page.label}
-            </Link>
+            </a>
           ))}
         </div>
       ) : (

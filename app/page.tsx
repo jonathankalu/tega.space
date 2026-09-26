@@ -8,7 +8,7 @@ import { VerificationBadge } from '@/components/VerificationBadge';
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center font-sans min-h-screen text-foreground">
-      <main className="flex flex-1 w-full max-w-2xl flex-col items-center py-9 px-8 gap-16">
+      <main className="flex flex-1 w-full max-w-2xl flex-col items-center py-9 px-4 md:px-8 gap-16 overflow-x-hidden">
         
         {/* Nav & Header */}
         <div className="flex flex-col items-center gap-[46px] w-full">
@@ -38,7 +38,7 @@ export default function Home() {
         </div>
 
         {/* About */}
-        <div className="flex flex-col gap-7 w-full">
+        <div id="about" className="flex flex-col gap-7 w-full scroll-mt-24">
           <h2 className="text-muted text-sm font-medium">About</h2>
           <div className="flex flex-col gap-7 text-muted text-sm leading-relaxed">
             <p>
@@ -63,39 +63,39 @@ export default function Home() {
         </div>
 
         {/* Experience */}
-        <div className="flex flex-col gap-[28px] w-full">
+        <div id="experience" className="flex flex-col gap-[28px] w-full scroll-mt-24">
           <div className="flex flex-col gap-6">
             <h2 className="text-muted text-sm">Experience</h2>
             <p className="text-muted text-sm">Overview of where I've worked</p>
           </div>
           
-          <div className="flex justify-between items-start w-full">
-            <span className="text-muted text-sm">2026 July - Now</span>
-            <div className="flex flex-col gap-2 w-[319px]">
+          <div className="flex flex-col md:flex-row justify-between items-start w-full gap-2 md:gap-0">
+            <span className="text-muted text-sm">July - Now</span>
+            <div className="flex flex-col gap-2 w-full md:w-[319px]">
               <span className="text-primary text-sm">Product/UI designer at <span className="underline">Chrine.site</span></span>
               <p className="text-muted text-sm leading-relaxed">Redesigning landing pages and websites for architectural firms and studios for better visual hierarchy and overall visual design.</p>
             </div>
           </div>
 
-          <div className="flex justify-between items-start w-full">
+          <div className="flex flex-col md:flex-row justify-between items-start w-full gap-2 md:gap-0">
             <span className="text-muted text-sm">2025 September - 2025 December</span>
-            <div className="flex flex-col gap-2 w-[319px]">
+            <div className="flex flex-col gap-2 w-full md:w-[319px]">
               <span className="text-primary text-sm">UI Designer at Dexcraft(now <span className="underline">Jetherverse</span>)</span>
               <p className="text-muted text-sm leading-relaxed">Contributed to early stages of the studio development, with selected screens designed, before transitioning off due to school commitment.</p>
             </div>
           </div>
 
-          <div className="flex justify-between items-start w-full">
+          <div className="flex flex-col md:flex-row justify-between items-start w-full gap-2 md:gap-0">
             <span className="text-muted text-sm">2025 August - 2025 September</span>
-            <div className="flex flex-col gap-2 w-[319px]">
+            <div className="flex flex-col gap-2 w-full md:w-[319px]">
               <span className="text-primary text-sm">Product designer at Bitech team</span>
               <p className="text-muted text-sm leading-relaxed">Collaborated with the team on creating a solution for online business management. i worked on the main overview dashboard and customer management section</p>
             </div>
           </div>
 
-          <div className="flex justify-between items-start w-full">
+          <div className="flex flex-col md:flex-row justify-between items-start w-full gap-2 md:gap-0">
             <span className="text-muted text-sm whitespace-pre-wrap">2025 mid June  -  2025   August </span>
-            <div className="flex flex-col gap-2 w-[319px]">
+            <div className="flex flex-col gap-2 w-full md:w-[319px]">
               <span className="text-primary text-sm">Product designer at Peachit</span>
               <p className="text-muted text-sm leading-relaxed">Joined the core team to solve a problem in Ed-tech that will make learning and education fun again.</p>
             </div>
@@ -103,7 +103,7 @@ export default function Home() {
         </div>
 
         {/* Projects */}
-        <div className="flex flex-col gap-7 w-full">
+        <div id="projects" className="flex flex-col gap-7 w-full scroll-mt-24">
           <div className="flex gap-5 items-center">
             <div className="flex items-center gap-1.5 cursor-pointer">
               <div className="w-1.5 h-1.5 min-w-[6px] min-h-[6px] flex-shrink-0 bg-primary rounded-full"></div>
@@ -160,7 +160,7 @@ export default function Home() {
         </div>
 
         {/* Personal Stuff */}
-        <div className="flex flex-col gap-4 w-full">
+        <div id="personal" className="flex flex-col gap-4 w-full scroll-mt-24">
           <span className="text-muted text-sm">Personal stuff ;)</span>
           
           <div className="flex flex-col gap-5 w-full">
@@ -180,7 +180,31 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="w-full relative h-[362px] mt-4">
+            {/* Mobile Collage */}
+            <div className="w-full relative mt-4 md:hidden h-[520px]">
+              <div className="flex items-center gap-1 absolute top-0 left-1.5 z-10">
+                 <span className="text-muted text-sm">Fav car brand</span>
+                 <Image src="/assets/horse.svg" alt="Horse" width={15} height={15} />
+                 <Image src="/assets/energy.svg" alt="Energy" width={15} height={15} />
+              </div>
+              <div className="relative w-full max-w-[320px] mx-auto mt-8 h-[480px]">
+                {/* Left side */}
+                <img src="/assets/collage-1-59384e.png" alt="Collage" className="absolute left-[10px] top-[0px] w-[91.5px] h-[105px] object-cover" />
+                <img src="/assets/collage-6-59384e.png" alt="Collage" className="absolute left-[40px] top-[170px] w-[91.5px] h-[105px] object-cover" />
+                <img src="/assets/collage-3-59384e.png" alt="Collage" className="absolute left-[10px] top-[300px] w-[91.5px] h-[105px] object-cover" />
+                
+                {/* Right side */}
+                <img src="/assets/collage-2-59384e.png" alt="Collage" className="absolute right-[10px] top-[50px] w-[91.5px] h-[105px] object-cover" />
+                <img src="/assets/collage-5-59384e.png" alt="Collage" className="absolute right-[40px] top-[220px] w-[91.5px] h-[105px] object-cover" />
+                <img src="/assets/collage-4-59384e.png" alt="Collage" className="absolute right-[10px] top-[370px] w-[91.5px] h-[105px] object-cover" />
+                
+                {/* Text */}
+                <span className="absolute left-[25px] top-[420px] text-transparent bg-clip-text bg-gradient-to-b from-[#E9BE69] via-[#CD2F2B] to-[#D0AC64] text-4xl" style={{ fontFamily: 'var(--font-swanky), cursive' }}>Porsche</span>
+              </div>
+            </div>
+
+            {/* Desktop Collage */}
+            <div className="w-full relative h-[362px] mt-4 hidden md:block">
               <div className="flex items-center gap-1 absolute top-1 left-1.5 z-10">
                  <span className="text-muted text-sm">Fav car brand</span>
                  <Image src="/assets/horse.svg" alt="Horse" width={15} height={15} />
