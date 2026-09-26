@@ -16,6 +16,7 @@ const swanky = Swanky_and_Moo_Moo({
   weight: "400",
   variable: "--font-swanky",
   subsets: ["latin"],
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
