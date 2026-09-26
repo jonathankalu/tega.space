@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { Nav } from '@/components/Nav';
 import { SocialLinks } from '@/components/SocialIcons';
 import { CaseStudyLink } from '@/components/CaseStudyLink';
+import ThemeToggle from '@/components/ThemeToggle';
 
 export default function Home() {
   return (
@@ -29,9 +30,7 @@ export default function Home() {
                   <span className="text-[#737373] text-sm">Product Designer/Researcher</span>
                 </div>
               </div>
-              <div className="flex items-center gap-2.5 bg-[#171717] px-2 py-1 rounded-full border border-[#0A0A0A] shadow-inner">
-                <Image src="/assets/sun.svg" alt="Sun" width={17} height={17} />
-              </div>
+              <ThemeToggle />
             </div>
             <p className="text-[#737373] text-sm">Currently making cool things</p>
           </div>
@@ -45,10 +44,7 @@ export default function Home() {
               Yo, my name is Amenah Oluwatobi Tegha (call me Tegha though) i'm a 19 year old <span className="text-[#E5E5E5]">Product Designer</span> with over a year of experience, currently leveling up to become an engineer.
             </p>
             <p>
-              I'm a product designer who starts with research, understanding the problem before designing the solution. I care about the full experience of a product, that is, how it looks, how it works, and how it feels, down to details like visual hierarchy and interaction design.
-            </p>
-            <p>
-              I design, not just screens but products for companies, startups and clients that solve real world problems and actually convert, whether its Web3, AI or Fintech. Right now, i'm working on <span className="text-[#E5E5E5]">Boba AI</span> and other <span className="text-[#E5E5E5]">projects.</span>
+              I design, not just screens but products for companies, startups and clients that solve real world problems and actually convert, whether its Web3, AI or Fintech . Right now, i'm working on <span className="text-[#E5E5E5]">Boba AI </span>and other<span className="text-[#E5E5E5]"> projects. </span>
             </p>
             <div className="flex items-center pt-2">
               <p>
@@ -111,7 +107,7 @@ export default function Home() {
                 <Image src="/assets/project-1.png" alt="Boba AI" fill className="object-cover" />
               </div>
               <div className="flex justify-between items-center py-4 text-[#D4D4D4] text-sm bg-transparent group-hover:text-white transition-colors">
-                <span>Boba AI - Fully Automated workflow</span>
+                <span className="whitespace-pre-wrap">Boba AI  -  Fully Automated workflow</span>
                 <CaseStudyLink href="#" />
               </div>
             </div>
@@ -121,7 +117,7 @@ export default function Home() {
                 <Image src="/assets/project-2.png" alt="Metis" fill className="object-cover" />
               </div>
               <div className="flex justify-between items-center py-4 text-[#D4D4D4] text-sm bg-transparent group-hover:text-white transition-colors">
-                <span>Metis - Stock App</span>
+                <span className="whitespace-pre-wrap">Metis  -  Stock App</span>
                 <CaseStudyLink href="#" />
               </div>
             </div>
