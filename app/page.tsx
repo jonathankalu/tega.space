@@ -8,11 +8,15 @@ import { VerificationBadge } from '@/components/VerificationBadge';
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center font-sans min-h-screen text-foreground">
-      <main className="flex flex-1 w-full max-w-[569px] flex-col items-center pt-9 pb-0 px-4 md:px-0 gap-16 overflow-x-hidden">
+      <main className="flex flex-1 w-full max-w-[569px] flex-col items-center pt-9 pb-0 px-4 md:px-0 gap-16">
         
-        {/* Nav & Header */}
+        {/* Sticky Nav */}
+        <div className="sticky top-6 z-50 w-full">
+          <Nav />
+        </div>
+
+        {/* Header (Time & Availability) */}
         <div className="flex flex-col items-center gap-[46px] w-full">
-          <Nav activePage="home" />
 
           {/* Time & Availability */}
           <div className="flex items-center gap-2.5 w-full">
