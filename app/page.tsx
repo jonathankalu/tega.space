@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Nav } from '@/components/Nav';
+import { LagosTime } from '@/components/LagosTime';
 import { SocialLinks } from '@/components/SocialIcons';
 import { CaseStudyLink } from '@/components/CaseStudyLink';
 import ThemeToggle from '@/components/ThemeToggle';
@@ -20,7 +21,7 @@ export default function Home() {
 
           {/* Time & Availability */}
           <div className="flex items-center gap-2.5 w-full">
-            <span className="text-muted text-sm">9:00 PM UTC+1</span>
+            <LagosTime />
           </div>
 
           <div className="flex flex-col gap-6 w-full">
