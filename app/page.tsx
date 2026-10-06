@@ -5,6 +5,7 @@ import { SocialLinks } from '@/components/SocialIcons';
 import { CaseStudyLink } from '@/components/CaseStudyLink';
 import ThemeToggle from '@/components/ThemeToggle';
 import { VerificationBadge } from '@/components/VerificationBadge';
+import LightboxImage from '@/components/LightboxImage';
 
 export default function Home() {
   return (
@@ -194,14 +195,14 @@ export default function Home() {
               </div>
               <div className="relative w-full max-w-[320px] mx-auto mt-8 h-[480px]">
                 {/* Left side */}
-                <img src="/assets/collage-1-59384e.png" alt="Collage" className="absolute left-[10px] top-[0px] w-[91.5px] h-[105px] object-cover" />
-                <img src="/assets/collage-6-59384e.png" alt="Collage" className="absolute left-[40px] top-[170px] w-[91.5px] h-[105px] object-cover" />
-                <img src="/assets/collage-3-59384e.png" alt="Collage" className="absolute left-[10px] top-[300px] w-[91.5px] h-[105px] object-cover" />
+                <LightboxImage src="/assets/collage-1-59384e.png" alt="Collage" className="absolute left-[10px] top-[0px] w-[91.5px] h-[105px] object-cover" />
+                <LightboxImage src="/assets/collage-6-59384e.png" alt="Collage" className="absolute left-[40px] top-[170px] w-[91.5px] h-[105px] object-cover" />
+                <LightboxImage src="/assets/collage-3-59384e.png" alt="Collage" className="absolute left-[10px] top-[300px] w-[91.5px] h-[105px] object-cover" />
                 
                 {/* Right side */}
-                <img src="/assets/collage-2-59384e.png" alt="Collage" className="absolute right-[10px] top-[50px] w-[91.5px] h-[105px] object-cover" />
-                <img src="/assets/collage-5-59384e.png" alt="Collage" className="absolute right-[40px] top-[220px] w-[91.5px] h-[105px] object-cover" />
-                <img src="/assets/collage-4-59384e.png" alt="Collage" className="absolute right-[10px] top-[370px] w-[91.5px] h-[105px] object-cover" />
+                <LightboxImage src="/assets/collage-2-59384e.png" alt="Collage" className="absolute right-[10px] top-[50px] w-[91.5px] h-[105px] object-cover" />
+                <LightboxImage src="/assets/collage-5-59384e.png" alt="Collage" className="absolute right-[40px] top-[220px] w-[91.5px] h-[105px] object-cover" />
+                <LightboxImage src="/assets/collage-4-59384e.png" alt="Collage" className="absolute right-[10px] top-[370px] w-[91.5px] h-[105px] object-cover" />
                 
                 {/* Text */}
                 <span className="absolute left-[25px] top-[420px] text-transparent bg-clip-text bg-gradient-to-b from-[#E9BE69] via-[#CD2F2B] to-[#D0AC64] text-4xl" style={{ fontFamily: 'var(--font-swanky), cursive' }}>Porsche</span>
@@ -216,13 +217,13 @@ export default function Home() {
                  <Image src="/assets/energy.svg" alt="Energy" width={15} height={15} />
               </div>
               {/* Fake Masonry / absolute positioning for collage */}
-              <img src="/assets/collage-1-59384e.png" alt="Collage" style={{ position: 'absolute', left: '0px', top: '38px', width: '87px', height: '105px', objectFit: 'cover' }} />
-              <img src="/assets/collage-6-59384e.png" alt="Collage" style={{ position: 'absolute', left: '38px', top: '181px', width: '87px', height: '105px', objectFit: 'cover' }} />
-              <img src="/assets/collage-2-59384e.png" alt="Collage" style={{ position: 'absolute', left: '142px', top: '70px', width: '87px', height: '105px', objectFit: 'cover' }} />
-              <img src="/assets/collage-7.png" alt="Collage" style={{ position: 'absolute', left: '229px', top: '221px', width: '139px', height: '93px', objectFit: 'cover' }} />
-              <img src="/assets/collage-3-59384e.png" alt="Collage" style={{ position: 'absolute', left: '267px', top: '41px', width: '87px', height: '105px', objectFit: 'cover' }} />
-              <img src="/assets/collage-4-59384e.png" alt="Collage" style={{ position: 'absolute', left: '406px', top: '70px', width: '87px', height: '105px', objectFit: 'cover' }} />
-              <img src="/assets/collage-5-59384e.png" alt="Collage" style={{ position: 'absolute', left: '455px', top: '221px', width: '87px', height: '105px', objectFit: 'cover' }} />
+              <LightboxImage src="/assets/collage-1-59384e.png" alt="Collage" style={{ position: 'absolute', left: '0px', top: '38px', width: '87px', height: '105px', objectFit: 'cover' }} />
+              <LightboxImage src="/assets/collage-6-59384e.png" alt="Collage" style={{ position: 'absolute', left: '38px', top: '181px', width: '87px', height: '105px', objectFit: 'cover' }} />
+              <LightboxImage src="/assets/collage-2-59384e.png" alt="Collage" style={{ position: 'absolute', left: '142px', top: '70px', width: '87px', height: '105px', objectFit: 'cover' }} />
+              <LightboxImage src="/assets/collage-7.png" alt="Collage" style={{ position: 'absolute', left: '229px', top: '221px', width: '139px', height: '93px', objectFit: 'cover' }} />
+              <LightboxImage src="/assets/collage-3-59384e.png" alt="Collage" style={{ position: 'absolute', left: '267px', top: '41px', width: '87px', height: '105px', objectFit: 'cover' }} />
+              <LightboxImage src="/assets/collage-4-59384e.png" alt="Collage" style={{ position: 'absolute', left: '406px', top: '70px', width: '87px', height: '105px', objectFit: 'cover' }} />
+              <LightboxImage src="/assets/collage-5-59384e.png" alt="Collage" style={{ position: 'absolute', left: '455px', top: '221px', width: '87px', height: '105px', objectFit: 'cover' }} />
               
               <span className="absolute left-[25px] top-[306px] text-transparent bg-clip-text bg-gradient-to-b from-[#E9BE69] via-[#CD2F2B] to-[#D0AC64] text-4xl" style={{ fontFamily: 'var(--font-swanky), cursive' }}>Porsche</span>
             </div>
