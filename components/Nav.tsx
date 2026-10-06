@@ -11,7 +11,6 @@ interface NavProps {
 export function Nav({ activePage = 'home' }: NavProps) {
   const bgClass = 'bg-nav-bg text-nav-text';
   const textMutedClass = 'text-muted';
-  const shadowClass = 'shadow-[0_11px_9.7px_rgba(141,141,141,0.25)] dark:shadow-[0_4px_14px_rgba(0,0,0,0.5)]';
 
   const pages = [
     { id: 'about', label: 'About', icon: '/assets/nav-icon-0.svg' },
@@ -23,8 +22,8 @@ export function Nav({ activePage = 'home' }: NavProps) {
   const activePageData = pages.find(p => p.id === activePage);
 
   return (
-    <nav className={`flex items-center px-4 md:px-5 py-3 md:py-4 rounded-[28px] w-max max-w-full overflow-x-auto scrollbar-hide transition-all duration-300 ${bgClass} ${shadowClass}`}>
-      <Link href="/" className={`flex items-center gap-2 ${activePage === 'home' ? 'mr-8' : 'mr-4'}`}>
+    <nav className={`flex items-center justify-between px-5 h-[53px] rounded-[28px] w-full overflow-x-auto scrollbar-hide transition-all duration-300 ${bgClass}`}>
+      <Link href="/" className="flex items-center gap-[8px] flex-shrink-0">
         <Image 
           src="/assets/avatar.png" 
           alt="Tegha" 
@@ -33,17 +32,17 @@ export function Nav({ activePage = 'home' }: NavProps) {
           className="rounded-full object-cover w-[21px] h-[21px]"
         />
         {activePage === 'home' && (
-          <span className="font-medium text-sm capitalize">Tegha</span>
+          <span className="font-medium text-sm capitalize whitespace-nowrap">Tegha</span>
         )}
       </Link>
 
       {activePage === 'home' ? (
-        <div className="flex items-center gap-4 md:gap-[25px]">
+        <div className="flex items-center gap-[25px] flex-shrink-0">
           {pages.map((page) => (
             <a 
               key={page.id} 
               href={`#${page.id}`}
-              className={`text-sm capitalize transition-colors hover:text-current ${textMutedClass}`}
+              className={`text-sm capitalize transition-colors hover:text-current whitespace-nowrap ${textMutedClass}`}
             >
               {page.label}
             </a>
