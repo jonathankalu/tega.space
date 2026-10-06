@@ -6,6 +6,7 @@ import { CaseStudyLink } from '@/components/CaseStudyLink';
 import ThemeToggle from '@/components/ThemeToggle';
 import { VerificationBadge } from '@/components/VerificationBadge';
 import LightboxImage from '@/components/LightboxImage';
+import { ProjectsTabs } from '@/components/ProjectsTabs';
 
 export default function Home() {
   return (
@@ -109,47 +110,7 @@ export default function Home() {
         </div>
 
         {/* Projects */}
-        <div id="projects" className="flex flex-col gap-7 w-full scroll-mt-24">
-          <div className="flex gap-5 items-center">
-            <div className="flex items-center gap-1.5 cursor-pointer">
-              <div className="w-1.5 h-1.5 min-w-[6px] min-h-[6px] flex-shrink-0 bg-primary rounded-full"></div>
-              <span className="text-primary text-sm">Projects</span>
-            </div>
-            <span className="text-muted text-sm cursor-pointer hover:text-primary transition-colors">Explorations</span>
-          </div>
-
-          <div className="flex flex-col gap-4 w-full">
-            <div className="flex flex-col w-full md:max-w-[569px] md:mx-auto group cursor-pointer">
-              <div className="relative w-full h-[319px] md:h-[496px] rounded-[8px] overflow-hidden">
-                <Image src="/assets/PR-1.png" alt="Boba AI" fill className="object-cover" />
-              </div>
-              <div className="flex justify-between items-center py-4 text-muted text-sm bg-transparent group-hover:text-primary transition-colors">
-                <span className="whitespace-pre-wrap">Boba AI  -  Fully Automated workflow</span>
-                <CaseStudyLink href="#" />
-              </div>
-            </div>
-
-            <div className="flex flex-col w-full md:max-w-[569px] md:mx-auto group cursor-pointer">
-              <div className="relative w-full h-[319px] md:h-[496px] rounded-[8px] overflow-hidden">
-                <Image src="/assets/PR-2.png" alt="Metis" fill className="object-cover" />
-              </div>
-              <div className="flex justify-between items-center py-4 text-muted text-sm bg-transparent group-hover:text-primary transition-colors">
-                <span className="whitespace-pre-wrap">Metis  -  Stock App</span>
-                <CaseStudyLink href="#" />
-              </div>
-            </div>
-
-            <div className="flex flex-col w-full md:max-w-[569px] md:mx-auto group cursor-pointer">
-              <div className="relative w-full h-[319px] md:h-[496px] rounded-[8px] overflow-hidden">
-                <Image src="/assets/PR-3.png" alt="Lux" fill className="object-cover" />
-              </div>
-              <div className="flex justify-between items-center py-4 text-muted text-sm bg-transparent group-hover:text-primary transition-colors">
-                <span>Lux - studio. GenAI</span>
-                <CaseStudyLink href="#" />
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProjectsTabs />
 
         {/* Tech Stack */}
         <div className="flex flex-col gap-7 w-full">
