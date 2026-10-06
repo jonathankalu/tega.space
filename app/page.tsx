@@ -8,7 +8,7 @@ import { VerificationBadge } from '@/components/VerificationBadge';
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center font-sans min-h-screen text-foreground">
-      <main className="flex flex-1 w-full max-w-2xl flex-col items-center pt-9 pb-0 px-4 md:px-8 gap-16 overflow-x-hidden">
+      <main className="flex flex-1 w-full max-w-[569px] flex-col items-center pt-9 pb-0 px-4 md:px-0 gap-16 overflow-x-hidden">
         
         {/* Nav & Header */}
         <div className="flex flex-col items-center gap-[46px] w-full">
@@ -113,9 +113,9 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-4 w-full">
-            <div className="flex flex-col w-full rounded-lg overflow-hidden group cursor-pointer">
-              <div className="relative w-full h-[319px]">
-                <Image src="/assets/project-1.png" alt="Boba AI" fill className="object-cover" />
+            <div className="flex flex-col w-full md:max-w-[569px] md:mx-auto group cursor-pointer">
+              <div className="relative w-full h-[319px] md:h-[496px] rounded-[8px] overflow-hidden">
+                <Image src="/assets/PR-1.png" alt="Boba AI" fill className="object-cover" />
               </div>
               <div className="flex justify-between items-center py-4 text-muted text-sm bg-transparent group-hover:text-primary transition-colors">
                 <span className="whitespace-pre-wrap">Boba AI  -  Fully Automated workflow</span>
@@ -123,9 +123,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col w-full rounded-lg overflow-hidden group cursor-pointer">
-              <div className="relative w-full h-[319px]">
-                <Image src="/assets/project-2.png" alt="Metis" fill className="object-cover" />
+            <div className="flex flex-col w-full md:max-w-[569px] md:mx-auto group cursor-pointer">
+              <div className="relative w-full h-[319px] md:h-[496px] rounded-[8px] overflow-hidden">
+                <Image src="/assets/PR-2.png" alt="Metis" fill className="object-cover" />
               </div>
               <div className="flex justify-between items-center py-4 text-muted text-sm bg-transparent group-hover:text-primary transition-colors">
                 <span className="whitespace-pre-wrap">Metis  -  Stock App</span>
@@ -133,9 +133,9 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col w-full rounded-lg overflow-hidden group cursor-pointer">
-              <div className="relative w-full h-[319px]">
-                <Image src="/assets/project-3.png" alt="Lux" fill className="object-cover" />
+            <div className="flex flex-col w-full md:max-w-[569px] md:mx-auto group cursor-pointer">
+              <div className="relative w-full h-[319px] md:h-[496px] rounded-[8px] overflow-hidden">
+                <Image src="/assets/PR-3.png" alt="Lux" fill className="object-cover" />
               </div>
               <div className="flex justify-between items-center py-4 text-muted text-sm bg-transparent group-hover:text-primary transition-colors">
                 <span>Lux - studio. GenAI</span>
