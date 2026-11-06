@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { CaseStudyLink } from "./CaseStudyLink";
 
 export function ProjectsTabs() {
@@ -39,12 +40,14 @@ export function ProjectsTabs() {
       {/* Projects Content */}
       <div className={`flex-col gap-4 w-full transition-opacity duration-300 ${activeTab === "projects" ? "flex opacity-100" : "hidden opacity-0"}`}>
         <div className="flex flex-col w-full md:max-w-[569px] md:mx-auto group cursor-pointer">
-          <div className="relative w-full h-[319px] md:h-[496px] rounded-[8px] overflow-hidden">
-            <Image src="/assets/PR-1.png" alt="Boba AI" fill className="object-cover" />
-          </div>
+          <Link href="/boba-ai" className="relative w-full h-[319px] md:h-[496px] rounded-[8px] overflow-hidden block">
+            <Image src="/assets/PR-1.png" alt="Boba AI" fill className="object-cover transition-transform duration-300 group-hover:scale-[1.01]" />
+          </Link>
           <div className="flex justify-between items-center py-4 text-muted text-sm bg-transparent group-hover:text-primary transition-colors">
-            <span className="whitespace-pre-wrap">Boba AI  -  Fully Automated workflow</span>
-            <CaseStudyLink href="#" />
+            <Link href="/boba-ai" className="whitespace-pre-wrap hover:underline">
+              Boba AI  -  Fully Automated workflow
+            </Link>
+            <CaseStudyLink href="/boba-ai" />
           </div>
         </div>
 

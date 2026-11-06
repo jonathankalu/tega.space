@@ -1,38 +1,52 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-heading: var(--heading);
   --color-muted: var(--muted);
   --color-accent: var(--accent);
   --color-border: var(--border);
   --color-nav-bg: var(--nav-bg);
   --color-nav-text: var(--nav-text);
+  --color-indicator-active: var(--indicator-active);
+  --color-indicator-completed: var(--indicator-completed);
+  --color-indicator-upcoming: var(--indicator-upcoming);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 :root {
-  --background: #FFFFFF;
+  --background: #FAFAFA;
   --foreground: #171717;
   --primary: #171717;
+  --heading: #262626;
   --muted: #737373;
   --accent: #F5F5F5;
   --border: #E5E5E5;
   --nav-bg: #171717;
   --nav-text: #F5F5F5;
+  --indicator-active: #000000;
+  --indicator-completed: #171717;
+  --indicator-upcoming: #A1A1A1;
 }
 
 .dark {
   --background: #0A0A0A;
   --foreground: #D4D4D4;
-  --primary: #E5E5E5;
+  --primary: #F5F5F5;
+  --heading: #E5E5E5;
   --muted: #737373;
   --accent: #171717;
   --border: #0A0A0A;
   --nav-bg: #F5F5F5;
   --nav-text: #262626;
+  --indicator-active: #FAFAFA;
+  --indicator-completed: #E5E5E5;
+  --indicator-upcoming: #525252;
 }
 
 body {
